@@ -1,10 +1,10 @@
 module Lib.SmallestMultiple where
 
-import Lib.Solution (Solution)
+import Lib.Solution
 import Data.Foldable (find)
 
 solution :: Solution
-solution = (5, "SmallestMultiple", solve)
+solution = Solution 5 "SmallestMultiple" solve
 
 solve :: Integer
 solve = case find (evenlyDivisibleByAll [1..20]) [1..] of

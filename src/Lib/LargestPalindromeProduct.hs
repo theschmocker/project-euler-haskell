@@ -1,11 +1,11 @@
 module Lib.LargestPalindromeProduct where
 
-import Lib.Solution (Solution)
+import Lib.Solution
 import Data.Foldable (find)
 import Data.List (sortBy)
 
 solution :: Solution
-solution = (4, "LargestPalindromeProduct", solve)
+solution = Solution 4 "LargestPalindromeProduct" solve
 
 solve :: Integer
 solve = case find isPalindrome $ sortDesc (permProducts 100 999) of

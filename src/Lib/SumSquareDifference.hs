@@ -1,9 +1,9 @@
 module Lib.SumSquareDifference where
 
-import Lib.Solution (Solution)
+import Lib.Solution
 
 solution :: Solution
-solution = (6, "SumSquareDifference", solve)
+solution = Solution 6 "SumSquareDifference" solve
 
 solve :: Integer
 solve = square (sum first100) - sum (map square first100)

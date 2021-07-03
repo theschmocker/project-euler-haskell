@@ -1,10 +1,10 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 module Lib.LargestPrimeFactor where
 
-import Lib.Solution (Solution)
+import Lib.Solution
 
 solution :: Solution
-solution = (3, "LargestPrimeFactor", solve) 
+solution = Solution 3 "LargestPrimeFactor" solve 
 
 solve :: Integer
 solve = largestPrimeFactor 600851475143
