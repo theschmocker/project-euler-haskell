@@ -11,6 +11,8 @@ import qualified Lib.LargestPrimeFactor
 import qualified Lib.LargestPalindromeProduct
 import qualified Lib.SmallestMultiple
 import qualified Lib.SumSquareDifference
+import qualified Lib.TenThousandAndFirstPrime
+import qualified Lib.LargestProductInSeries
 
 import Lib (prompt)
 
@@ -31,4 +33,6 @@ solutions =
   , Lib.LargestPalindromeProduct.solution
   , Lib.SmallestMultiple.solution
   , Lib.SumSquareDifference.solution
+  , Lib.TenThousandAndFirstPrime.solution
+  , Lib.LargestProductInSeries.solution
   ]
